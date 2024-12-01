@@ -1,10 +1,10 @@
 # Project_AI: On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks
 
-This repository contains the data and code used in our project titled **"On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks."** 
+This repository contains the data and code used in our project titled **"On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks."**
 
 ## Overview
 
-In this study, we investigate a pivotal question in the field of machine learning security: **Can "cheap" unrealistic adversarial attacks effectively harden machine learning models against more sophisticated and computationally expensive realistic attacks?** 
+In this study, we investigate a pivotal question in the field of machine learning security: **Can "cheap" unrealistic adversarial attacks effectively harden machine learning models against more sophisticated and computationally expensive realistic attacks?**
 
 Our task delves into two distinct use cases:
 - **Text Classification**: Assessing the resilience of natural language processing models.
@@ -20,9 +20,8 @@ For each use case, we employ one realistic attack and one unrealistic attack, pr
 
 ## Repository Contents
 
-- **Data**: Datasets used for training and evaluation are obtained via this [link](https://uniluxembourg-my.sharepoint.com/personal/salijona_dyrmishi_uni_lu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsalijona%5Fdyrmishi%5Funi%5Flu%2FDocuments%2Frealistic%5Fadversarial%5Fhardening&ga=1)..
+- **Data**: Datasets used for training and evaluation can be obtained via [this link](https://uniluxembourg-my.sharepoint.com/personal/salijona_dyrmishi_uni_lu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fsalijona%5Fdyrmishi%5Funi%5Flu%2FDocuments%2Frealistic%5Fadversarial%5Fhardening&ga=1).
 
-
-## Getting Started
-
-
+The original repository for this project can be cloned using the command:
+```bash
+git clone https://github.com/serval-uni-lu/realistic_adversarial_hardening.git
