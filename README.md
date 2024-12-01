@@ -43,5 +43,6 @@ git clone https://github.com/serval-uni-lu/realistic_adversarial_hardening.git
    ```bash
    module load lang/Python/3.8.6-GCCcore-10.2.0
    ```
-5 **The resulting** model will be saved under the ../botnet/out directory, and from there, you can attack with the attack.py file
+5 **The resulting** model will be saved under the ../botnet/out directory, which is used as input in the attack.py file for the attack of the trained model
+
 6 **With the different results** obtained across the three datasets, you can make your observations and conclusions.
