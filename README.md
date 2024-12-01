@@ -37,7 +37,7 @@ git clone https://github.com/serval-uni-lu/realistic_adversarial_hardening.git
    - **Sub-item 3**: In our case, the ART library used had some issues, so we were supposed to change [this line](https://github.com/Trusted-AI/adversarial-robustness-toolbox/blob/970c74a849b9dde060a9ad33024476882c995d5f/art/attacks/evasion/projected_gradient_descent/projected_gradient_descent_tensorflow_v2.py#L154) to `targets = self._set_targets(x, y, False)` and add `target = np.expand_dims(target, axis=1)` after [this line](https://github.com/serval-uni-lu/realistic_adversarial_hardening/blob/2103877bb3a1e48b9953bc08f3abc319f7b8d695/botnet/attack/pgd/pgd_attack_art.py#L48) in the `pgd_attack_art.py` file..
    - **Sub-item 4**: There were many other changes made, but these were the most essential ones.
 
-3. **The repository was uploaded to HPC** to increase the speed of training the datasets, which demand a lot of resources, making it better suited for HPC.
+3. **The repository was uploaded to HPC** to increase the speed of training the datasets, which demands a lot of resources.
 
 4. **Connect to the HPC** and load the latest Python module with the command:
    ```bash
