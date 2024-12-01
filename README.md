@@ -28,7 +28,7 @@ git clone https://github.com/serval-uni-lu/realistic_adversarial_hardening.git
 ```
 
 ## Getting Started
-##PART I (BOTNET)
+## PART I:BOTNET
 1. **Install the necessary libraries** to run the different codes in the project.
 
 2. **Several fixes have been made** in order to carry out the project properly:
