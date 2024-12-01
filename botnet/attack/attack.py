@@ -61,12 +61,12 @@ def attack(method, model_path, samples_path, labels_path, distance, iterations, 
 
 if __name__ == "__main__":
 
-    scaler = joblib.load('../data/rbot/scaler.pkl')
-    min_features, max_features = read_min_max('../data/rbot/minimum_rbot.txt', '../data/rbot/maximum_rbot.txt')
-    mask_idx = np.load('../data/rbot/mutable_idx.npy')
-    eq_min_max = np.load('../data/rbot/eq_min_max_idx.npy')
+    scaler = joblib.load('../data/neris/scaler.pkl')
+    min_features, max_features = read_min_max('../data/neris/minimum.txt', '../data/neris/maximum.txt')
+    mask_idx = np.load('../data/neris/mutable_idx.npy')
+    eq_min_max = np.load('../data/neris/eq_min_max_idx.npy')
     start_time = datetime.now()
-    perturbed_samples, success_rate_12 = attack('neris',  '../out/rbot/fence_10epochs/fence_model.h5', '../data/rbot/testing_samples.npy', '../data/rbot/testing_labels.npy', distance=12, iterations=50, mask_idx=mask_idx, eq_min_max=eq_min_max)
+    perturbed_samples, success_rate_12 = attack('neris',  '../out/neris/fence_10epochs/fence_model.h5', '../data/neris/testing_samples.npy', '../data/neris/testing_labels.npy', distance=12, iterations=50, mask_idx=mask_idx, eq_min_max=eq_min_max)
     #np.save("perturbations_neris_all_nerisds_trainset.npy", perturbed_samples)
     end_time = datetime.now()
     print('Duration: {}'.format(end_time - start_time))
