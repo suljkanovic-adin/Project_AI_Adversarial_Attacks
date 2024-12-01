@@ -25,3 +25,5 @@ For each use case, we employ one realistic attack and one unrealistic attack, pr
 The original repository for this project can be cloned using the command:
 ```bash
 git clone https://github.com/serval-uni-lu/realistic_adversarial_hardening.git
+
+## Getting started
