@@ -1,12 +1,12 @@
-# S&P 2023 Paper: On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks
+# Project_AI: On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks
 
-This repository contains the data and code used in our S&P 2023 paper titled **"On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks."** 
+This repository contains the data and code used in our project titled **"On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks."** 
 
 ## Overview
 
 In this study, we investigate a pivotal question in the field of machine learning security: **Can "cheap" unrealistic adversarial attacks effectively harden machine learning models against more sophisticated and computationally expensive realistic attacks?** 
 
-Our research delves into two distinct use cases:
+Our task delves into two distinct use cases:
 - **Text Classification**: Assessing the resilience of natural language processing models.
 - **Botnet Detection**: Evaluating the robustness of cybersecurity systems against adversarial manipulation.
 
