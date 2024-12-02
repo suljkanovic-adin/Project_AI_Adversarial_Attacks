@@ -47,6 +47,8 @@ git clone https://github.com/serval-uni-lu/realistic_adversarial_hardening.git
 
 6 **With the different results** obtained across the three datasets, you can make your observations and conclusions.
 
+## PART II: TEXT
+
 # Unrealistic vs Realistic Adversarial Training in Text Classification
 
 This project replicates the text classification portion of the paper "On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks" (Dyrmishi et al., 2023). The experiment investigates whether training with computationally cheaper unrealistic adversarial examples (DeepWordBug) can effectively protect models against realistic adversarial attacks (TextFooler and PWWS).
