@@ -76,7 +76,48 @@ Due to size limitations, trained models are hosted externally. You can access al
 
 ## Dependencies
 
+- Python 3.10
+- textattack[tensorflow,optional]==0.2.15
+- tensorflow==2.12
+- PyTorch
+- transformers
+- nltk
+
 ## Setup and Usage
+
+1. Install the required packages:
+pip install textattack[tensorflow,optional]
+pip install tensorflow==2.12
+
+2. For Tweet Offensive dataset processing, you'll need additional NLTK data:
+import nltk
+nltk.download('averaged_perceptron_tagger_eng')
+
+3. **Important:** If you encounter concatenation errors when evaluating the Tweet Offensive dataset, apply the following fix:
+# Fix for textattack dataset_args.py concatenation issue
+file_path = '/usr/local/lib/python3.10/dist-packages/textattack/dataset_args.py'
+with open(file_path, 'r') as f:
+    lines = f.readlines()
+
+lines[278] = lines[278].replace('dataset_args[:2] + (args.dataset_split,)', 
+                               'dataset_args[:2] + list((args.dataset_split,)) + dataset_args[3:]')
+
+with open(file_path, 'w') as f:
+    f.writelines(lines)
+    
+4.Run the training notebooks in the following order:
+- `adversarial_rotten_tomatoes.ipynb`
+- `adversarial_ag_news.ipynb` 
+- `adversarial_tweet_offensive.ipynb`
+
+5. After training, run the evaluation notebooks:
+- `models_clean_evaluation.ipynb`
+- `models_robust_evaluation_TF.ipynb`
+- `models_robust_evaluation_PWWS.ipynb`
+
+## Environment
+
+All experiments were conducted using Google Colab.
 
 ## Results
 
@@ -84,4 +125,10 @@ Detailed results and analysis are available in the presentation.
 
 ## Citation
 
-If you use this code, please cite the original paper: _On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks_
+If you use this code, please cite the original paper: 
+@article{dyrmishi2023empirical,
+  title={On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks},
+  author={Dyrmishi, Salijona and Ghamizi, Salah and Simonetto, Thibault and Le Traon, Yves and Cordy, Maxime},
+  journal={arXiv preprint arXiv:2202.03277},
+  year={2023}
+}
