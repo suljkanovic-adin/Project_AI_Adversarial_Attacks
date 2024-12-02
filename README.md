@@ -90,9 +90,11 @@ Due to size limitations, trained models are hosted externally. You can access al
 1. Install the required packages:
 
 pip install textattack[tensorflow,optional]
+
 pip install tensorflow==2.12
 
 2. For Tweet Offensive dataset processing, you'll need additional NLTK data:
+
 import nltk
 nltk.download('averaged_perceptron_tagger_eng')
 
