@@ -46,3 +46,42 @@ git clone https://github.com/serval-uni-lu/realistic_adversarial_hardening.git
 5 **The resulting** model will be saved under the ../botnet/out directory, which is used as input in the attack.py file for the attack of the trained model
 
 6 **With the different results** obtained across the three datasets, you can make your observations and conclusions.
+
+# Unrealistic vs Realistic Adversarial Training in Text Classification
+
+This project replicates the text classification portion of the paper "On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks" (Dyrmishi et al., 2023). The experiment investigates whether training with computationally cheaper unrealistic adversarial examples (DeepWordBug) can effectively protect models against realistic adversarial attacks (TextFooler and PWWS).
+
+## Project Structure
+
+The experiment is organized across multiple notebooks:
+
+### Training Notebooks
+- `adversarial_rotten_tomatoes.ipynb`: Training on Rotten Tomatoes dataset
+- `adversarial_ag_news.ipynb`: Training on AG News dataset  
+- `adversarial_tweet_offensive.ipynb`: Training on Tweet Offensive dataset
+
+For each dataset, we trained three models:
+- Baseline model: 5 clean epochs
+- DeepWordBug hardened model: 1 clean epoch + 4 adversarial epochs
+- TextFooler hardened model: 1 clean epoch + 4 adversarial epochs
+
+### Evaluation Notebooks
+- `models_clean_evaluation.ipynb`: Evaluates clean accuracy for all 9 trained models
+- `models_robust_evaluation_TF.ipynb`: Evaluates robust accuracy against TextFooler attack
+- `models_robust_evaluation_PWWS.ipynb`: Evaluates robust accuracy against PWWS attack
+
+## Trained Models
+
+Due to size limitations, trained models are hosted externally. You can access all trained models here:
+
+## Dependencies
+
+## Setup and Usage
+
+## Results
+
+Detailed results and analysis are available in the presentation. 
+
+## Citation
+
+If you use this code, please cite the original paper: _On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks_
