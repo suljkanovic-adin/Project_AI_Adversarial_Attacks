@@ -74,7 +74,7 @@ For each dataset, we trained three models:
 
 ## Trained Models
 
-Due to size limitations, trained models are hosted externally. You can access all trained models here:
+Due to size limitations, trained models are hosted externally. You can access all trained models here: https://uniluxembourg-my.sharepoint.com/:u:/g/personal/0211413060_uni_lu/EctVdHweIqNFsG2jy6jxP1gBYbvJXFc6QLiaFbozqrZlJw?e=Y41DYX
 
 ## Dependencies
 
