@@ -133,3 +133,9 @@ Detailed results and analysis are available in the presentation.
 If you use this code, please cite the original paper: 
 
 On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks
+
+## Share of Work
+
+Part I was conducted by Neil Fondop.
+
+Part II was conducted by Adin Suljkanovic.
