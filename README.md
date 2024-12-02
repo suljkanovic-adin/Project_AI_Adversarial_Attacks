@@ -88,6 +88,7 @@ Due to size limitations, trained models are hosted externally. You can access al
 ## Setup and Usage
 
 1. Install the required packages:
+
 pip install textattack[tensorflow,optional]
 pip install tensorflow==2.12
 
