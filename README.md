@@ -131,9 +131,5 @@ Detailed results and analysis are available in the presentation.
 ## Citation
 
 If you use this code, please cite the original paper: 
-@article{dyrmishi2023empirical,
-  title={On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks},
-  author={Dyrmishi, Salijona and Ghamizi, Salah and Simonetto, Thibault and Le Traon, Yves and Cordy, Maxime},
-  journal={arXiv preprint arXiv:2202.03277},
-  year={2023}
-}
+
+On The Empirical Effectiveness of Unrealistic Adversarial Hardening Against Realistic Adversarial Attacks
